@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="mCB-nR-J73">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home Page View Controller-->
+        <scene sceneID="5nd-g1-gbV">
+            <objects>
+                <viewController storyboardIdentifier="BLHomePageViewController" id="mCB-nR-J73" customClass="BLHomePageViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="KXt-Cg-Jcb">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Skc-xW-hWO">
+                                <rect key="frame" x="158.5" y="51" width="97" height="42"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="大狮解" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mWC-aR-roU">
+                                        <rect key="frame" x="45" y="10.5" width="52" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.32941176470588235" green="0.33333333333333331" blue="0.36078431372549019" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="HRm-l3-PgA">
+                                        <rect key="frame" x="0.0" y="0.0" width="39" height="42"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="HRm-l3-PgA" firstAttribute="leading" secondItem="Skc-xW-hWO" secondAttribute="leading" id="42W-PS-14F"/>
+                                    <constraint firstItem="mWC-aR-roU" firstAttribute="centerY" secondItem="Skc-xW-hWO" secondAttribute="centerY" id="ASk-XC-SDU"/>
+                                    <constraint firstAttribute="height" constant="42" id="KSw-NV-fEb"/>
+                                    <constraint firstItem="HRm-l3-PgA" firstAttribute="top" secondItem="Skc-xW-hWO" secondAttribute="top" id="M67-qT-W1N"/>
+                                    <constraint firstAttribute="bottom" secondItem="HRm-l3-PgA" secondAttribute="bottom" id="T4d-GC-4CE"/>
+                                    <constraint firstAttribute="trailing" secondItem="mWC-aR-roU" secondAttribute="trailing" id="ddS-Zm-XEt"/>
+                                    <constraint firstItem="mWC-aR-roU" firstAttribute="leading" secondItem="HRm-l3-PgA" secondAttribute="trailing" constant="6" id="juk-7A-pfp"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="选择您的兴趣！" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zjB-5q-eWm">
+                                <rect key="frame" x="15" y="156" width="86" height="15"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="0.62745098039215685" green="0.65490196078431373" blue="0.71372549019607845" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <progressView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="C9O-o2-B0X">
+                                <rect key="frame" x="111" y="159" width="224" height="9"/>
+                                <color key="tintColor" red="1" green="0.41960784313725491" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="9" id="6VK-nY-oUf"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="ib_cornerRadius">
+                                        <real key="value" value="4.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </progressView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="zjB-5q-eWm" firstAttribute="top" secondItem="QeX-WT-wQh" secondAttribute="top" constant="112" id="32v-CN-cPn"/>
+                            <constraint firstItem="zjB-5q-eWm" firstAttribute="leading" secondItem="QeX-WT-wQh" secondAttribute="leading" constant="15" id="4Xi-YU-fRK"/>
+                            <constraint firstItem="C9O-o2-B0X" firstAttribute="centerY" secondItem="zjB-5q-eWm" secondAttribute="centerY" id="QUJ-Bx-Few"/>
+                            <constraint firstAttribute="trailing" secondItem="C9O-o2-B0X" secondAttribute="trailing" constant="79" id="TNr-ts-kg6"/>
+                            <constraint firstItem="Skc-xW-hWO" firstAttribute="centerX" secondItem="KXt-Cg-Jcb" secondAttribute="centerX" id="YTv-Gc-S7Q"/>
+                            <constraint firstItem="Skc-xW-hWO" firstAttribute="top" secondItem="KXt-Cg-Jcb" secondAttribute="top" constant="51" id="esH-eV-erd"/>
+                            <constraint firstItem="C9O-o2-B0X" firstAttribute="leading" secondItem="zjB-5q-eWm" secondAttribute="trailing" constant="10" id="jWB-cm-j7b"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="QeX-WT-wQh"/>
+                    </view>
+                    <connections>
+                        <outlet property="progressView" destination="C9O-o2-B0X" id="hRd-F5-SUv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tFN-3E-taU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="76.811594202898561" y="225"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="logo" width="39" height="42"/>
+    </resources>
+</document>

@@ -1,0 +1,36 @@
+
+
+@font-face
+{
+    font-family: 'TsangerJinKai03-W01';
+    src: local('TsangerJinKai03-W01'),url('TsangerJinKai03-W01.ttf') format('opentype');
+}
+@font-face
+{
+    font-family: 'TsangerJinKai03-W02';
+    src: local('TsangerJinKai03-W02'),url('TsangerJinKai03-W02.ttf') format('opentype');
+}
+@font-face
+{
+    font-family: 'TsangerJinKai03-W03';
+    src: local('TsangerJinKai03-W03'),url('TsangerJinKai03-W03.ttf') format('opentype');
+}
+@font-face
+{
+    font-family: 'TsangerJinKai03-W04';
+    src: local('TsangerJinKai03-W04'),url('TsangerJinKai03-W04.ttf') format('opentype');
+}
+
+body,p,span,div {
+    font-family: 'TsangerJinKai03-W03';
+    font-size: 15px;
+    font-weight: normal;
+}
+
+h1,h2,h3,h4,h5
+{
+    font-family: 'TsangerJinKai03-W04';
+}
+
+
+

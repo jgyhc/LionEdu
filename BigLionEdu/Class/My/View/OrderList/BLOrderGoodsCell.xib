@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="77" id="KGk-i7-Jjw" customClass="BLOrderGoodsCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="77"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="77"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nrT-ad-3rQ">
+                        <rect key="frame" x="5" y="0.0" width="310" height="77"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    </view>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ZKv-4J-eex">
+                        <rect key="frame" x="15" y="3.5" width="70" height="70"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="70" id="mFG-JK-KqE"/>
+                            <constraint firstAttribute="height" constant="70" id="q03-Kc-MIE"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="ib_cornerRadius">
+                                <real key="value" value="2"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="ib_borderWidth">
+                                <real key="value" value="0.59999999999999998"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="ib_borderColor">
+                                <color key="value" red="0.95686274510000002" green="0.95686274510000002" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="好看的正能量书籍畅销书排行榜2019必读" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vii-hM-HiO">
+                        <rect key="frame" x="95" y="3.5" width="210" height="33.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="￥126.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XIi-jX-PL5">
+                        <rect key="frame" x="95" y="59" width="51" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="1" green="0.41960784309999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="x1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AV0-Eo-A0K">
+                        <rect key="frame" x="291" y="56.5" width="14" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.52941176470588236" green="0.5490196078431373" blue="0.59215686274509804" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Vii-hM-HiO" firstAttribute="leading" secondItem="ZKv-4J-eex" secondAttribute="trailing" constant="10" id="4XI-jr-ppM"/>
+                    <constraint firstItem="ZKv-4J-eex" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Ame-9E-WwI"/>
+                    <constraint firstItem="nrT-ad-3rQ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Jtp-pU-DMV"/>
+                    <constraint firstItem="nrT-ad-3rQ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="L1I-p4-YLD"/>
+                    <constraint firstItem="ZKv-4J-eex" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="QLe-U5-PLF"/>
+                    <constraint firstAttribute="trailing" secondItem="AV0-Eo-A0K" secondAttribute="trailing" constant="15" id="QlB-6H-Mza"/>
+                    <constraint firstAttribute="trailing" secondItem="Vii-hM-HiO" secondAttribute="trailing" constant="15" id="afU-bf-jWE"/>
+                    <constraint firstAttribute="bottom" secondItem="nrT-ad-3rQ" secondAttribute="bottom" id="av5-rE-YI5"/>
+                    <constraint firstItem="XIi-jX-PL5" firstAttribute="leading" secondItem="ZKv-4J-eex" secondAttribute="trailing" constant="10" id="bG4-fT-h4l"/>
+                    <constraint firstItem="XIi-jX-PL5" firstAttribute="bottom" secondItem="ZKv-4J-eex" secondAttribute="bottom" id="dzA-qG-mXx"/>
+                    <constraint firstItem="Vii-hM-HiO" firstAttribute="top" secondItem="ZKv-4J-eex" secondAttribute="top" id="eSc-32-s3G"/>
+                    <constraint firstAttribute="trailing" secondItem="nrT-ad-3rQ" secondAttribute="trailing" constant="5" id="fQv-WN-ggB"/>
+                    <constraint firstItem="AV0-Eo-A0K" firstAttribute="bottom" secondItem="ZKv-4J-eex" secondAttribute="bottom" id="hKy-Cm-a8O"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <connections>
+                <outlet property="goodsImg" destination="ZKv-4J-eex" id="968-Kl-vMU"/>
+                <outlet property="numLab" destination="AV0-Eo-A0K" id="EJO-8b-8CB"/>
+                <outlet property="priceLab" destination="XIi-jX-PL5" id="RqI-X2-rGc"/>
+                <outlet property="titleLab" destination="Vii-hM-HiO" id="NcG-KJ-Ub2"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="130.24553571428572"/>
+        </tableViewCell>
+    </objects>
+</document>

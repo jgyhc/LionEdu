@@ -1,0 +1,25 @@
+//
+//  BLAPPMyselfGetreceiveCouponListAPI.h
+//  BigLionEdu
+//
+//  Created by mac on 2019/8/22.
+//  Copyright © 2019 刘聪. All rights reserved.
+//
+
+#import "MJAPIBaseManager.h"
+
+NS_ASSUME_NONNULL_BEGIN
+
+@interface BLAPPMyselfGetreceiveCouponListAPI : MJAPIBaseManager
+
+@end
+
+@interface BLAPPMyselfReceiveCouponAPI : MJAPIBaseManager
+
+@end
+
+@interface BLAPPMyselfExchangeCouponAPI : MJAPIBaseManager
+
+@end
+
+NS_ASSUME_NONNULL_END
